@@ -27,10 +27,6 @@ html, body {
     background-size: cover;
 }
 
-.header:hover{
-    filter:blur(10px);
-    -webkit-filter: blur(10px);
-}
 .intro {
     height: 100%;
     width: 100%;
