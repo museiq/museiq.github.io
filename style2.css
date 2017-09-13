@@ -16,9 +16,9 @@ html, body {
     display:block;
     -webkit-background-size: cover;
     background: url(dock.jpg) no-repeat center center fixed;
-    filter:blur(3px);
+    filter:blur(0px) brightness(110%);
     height: 100%;
-    -webkit-filter: blur(3px);
+    -webkit-filter: brightness(110%) blur(0px) ;
     left: 0;
     right: 0;
     z-index: 0;
@@ -32,8 +32,8 @@ html, body {
     width: 100%;
     margin: auto;
     /*background: url(dock.jpg) no-repeat center center fixed;*/
-    display: table;
-    top:-30%;
+    display:grid;
+    top:0%;
     position: absolute;
     z-index: 1;
 }
@@ -47,6 +47,7 @@ html, body {
     max-width: 75%;
     margin: auto;
     text-align: center;
+    z-index: 0;
 }
 .content h1 {
     font-family: 'Raleway', sans-serif;
@@ -65,23 +66,75 @@ html, body {
     font-family: 'Oswald', sans-serif;
     color: #15481b;
     font-size: 135%;
-    padding: 10px 20px;
+    padding: 2px 2px 2px 2px;
+    margin: 2px 2px 2px 2px;
+    width: 200px;
     border: solid #15481b 3px;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 .btn:hover {
-    color: #426fd3;
-    border: solid #426fd3 3px;
+    color: #6e9bff;
+    border: solid #6e9bff 3px;
 }
-
-@media only screen and (max-width: 750px) {
+.project {
+    column-span: 1;
+}
+#projects {
+    column-count: 3;
+    -webkit-column-count: 3;
+    column-fill: balance;
+    -webkit-column-fill: auto;
+}
+#projects h2 {
+    column-span: all;
+}
+#courses{
+    column-count:3;
+    column-fill: balance;
+}
+@media only screen and (max-width: 720px) {
+    .content {
+        margin-top: 30px;
+    }
     .content h1 {
         font-size:250%;
     }
     
     .btn {
-        font-size: 65%;
+        align-content: center;
+        font-size: 95%;
+        margin-bottom: 3px;
+        width: 100%;
     }
+    
+    #button {
+        margin-top: 30px;
+        width: 40%;
+        display: inline-grid;
+/*        float: left;*/
+    }
+    #button2 {
+        margin-top: 30px;
+        width: 40%;
+        display: inline-grid;
+    }
+}
+@media only screen and (max-height: 250px) {
+    .btn {
+        width: 100%;
+        font-size: 95%;
+    }
+    #button {
+        width: 30%;
+/*        float: left;*/
+        display: inline-grid;
+
+    }
+    #button2 {
+        width: 30%;
+        display: inline-grid;
+    }
+    
 }
