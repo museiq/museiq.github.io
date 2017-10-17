@@ -86,6 +86,9 @@ html, body {
     -webkit-column-count: 3;
     column-fill: balance;
     -webkit-column-fill: auto;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
 }
 #projects h2 {
     column-span: all;
