@@ -15,7 +15,7 @@ html, body {
 .header {
     display:block;
     -webkit-background-size: cover;
-    background: url(dock.jpg) no-repeat center center fixed;
+    background: url(20190816_103956.jpg) no-repeat center center fixed;
     filter:blur(0px) brightness(110%);
     height: 100%;
     -webkit-filter: brightness(110%) blur(0px) ;
