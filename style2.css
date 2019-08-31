@@ -95,14 +95,18 @@ html, body {
 }
 #courses{
     column-count:3;
-    column-fill: balance;
-    max-width: 100%;
+    column-fill: auto;
+    -webkit-column-fill: auto;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
     
 }
 #courses li {
     page-break-inside: avoid;
     break-inside: avoid-column;
     -webkit-column-break-inside: avoid;
+    column-span: 1;
 }
 
 
