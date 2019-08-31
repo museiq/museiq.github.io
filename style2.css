@@ -100,9 +100,9 @@ html, body {
     page-break-inside: avoid;
     break-inside: avoid-column;
     -webkit-column-break-inside: avoid;
-    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 20px; /* Firefox */
-    column-gap: 20px;
+    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 10px; /* Firefox */
+    column-gap: 10px;
     
 }
 #courses li {
