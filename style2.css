@@ -96,6 +96,9 @@ html, body {
 #courses{
     column-count:3;
     column-fill: balance;
+    -webkit-column-width: auto; /* Chrome, Safari, Opera */
+    -moz-column-width: auto; /* Firefox */
+    column-width: auto;
 }
 #courses li {
     page-break-inside: avoid;
